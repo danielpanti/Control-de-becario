@@ -1,0 +1,53 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+#sidebar {    /*Estilo*/
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #0c0c0c;
+    left: -200px;
+
+    transition: all 500ms;
+}
+#sidebar.active{
+    left: 0;
+}
+#sidebar ul li{/*Los elementos que esten dentro de sidebar que tengan ul y lei seran afectados*/
+    color: rgba(238, 238, 238, 0.9);
+    text-align: center;
+    border-bottom: solid rgba(177, 177, 177, 0.3);
+    padding: 15px 10px; /*Para dejar margen de las palabras con el borde de las lineas*/
+ 
+}
+
+.logo{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer
+   
+}
+#sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgba(58, 56, 56, 0.5);
+}
+
+#contenido { «width: 1024px; margin-left: 50%; }
